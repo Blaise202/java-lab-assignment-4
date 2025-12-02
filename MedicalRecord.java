@@ -13,4 +13,9 @@ public class MedicalRecord {
   public String getDescription(){
     return description;
   }
+
+  @Override
+  public String toString() {
+      return "[" + date + "] " + description;
+  }
 }
