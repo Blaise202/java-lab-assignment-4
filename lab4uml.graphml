@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created by yFiles for HTML 3.0.0.4+demo1-->
+<graphml xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml.html/2.0/ygraphml.xsd " xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:uml="http://www.yworks.com/yFilesHTML/demos/UMLDemoStyle/1.0" xmlns:yx="http://www.yworks.com/xml/yfiles-common/4.0" xmlns:y="http://www.yworks.com/xml/yfiles-common/3.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/3.0" xmlns:yjs="http://www.yworks.com/xml/yfiles-for-html/3.0/xaml" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<key id="d0" for="node" attr.name="NodeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeLabels"/>
+	<key id="d1" for="node" attr.name="NodeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeGeometry"/>
+	<key id="d2" for="all" attr.name="UserTags" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/UserTags"/>
+	<key id="d3" for="node" attr.name="NodeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeStyle"/>
+	<key id="d4" for="edge" attr.name="EdgeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeLabels"/>
+	<key id="d5" for="edge" attr.name="EdgeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeGeometry"/>
+	<key id="d6" for="edge" attr.name="EdgeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeStyle"/>
+	<key id="d7" for="port" attr.name="PortLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLabels"/>
+	<key id="d8" for="port" attr.name="PortLocationParameter" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLocationParameter">
+		<default>
+			<x:Static Member="y:FreeNodePortLocationModel.NodeCenterAnchored"/>
+		</default>
+	</key>
+	<key id="d9" for="port" attr.name="PortStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortStyle">
+		<default>
+			<x:Static Member="y:VoidPortStyle.Instance"/>
+		</default>
+	</key>
+	<key id="d10" attr.name="SharedData" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/SharedData"/>
+	<data key="d10">
+		<y:SharedData>
+			<yjs:CssFill x:Key="1" cssString="#607d8b"/>
+			<yjs:CssFill x:Key="2" cssString="#a3f1bb"/>
+			<yjs:CssFill x:Key="3" cssString="#a3f1bb"/>
+			<yjs:CssFill x:Key="4" cssString="#607d8b"/>
+			<yjs:Arrow x:Key="5" fill="BLACK" type="NONE"/>
+		</y:SharedData>
+	</data>
+	<graph id="G" edgedefault="directed">
+		<node id="n0">
+			<data key="d1">
+				<y:RectD X="482.7931307953015" Y="56" Width="302.4685003141587" Height="182"/>
+			</data>
+			<data key="d3">
+				<uml:UMLNodeStyle fill="{x:Static yjs:Color.CRIMSON}" highlightFill="{y:GraphMLReference 3}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="abstract" className="Person" attributesOpen="false" operationsOpen="true">
+							<uml:UMLClassModel.attributes>
+								<x:Array>
+									<sys:String><![CDATA[#name: String]]></sys:String>
+									<sys:String><![CDATA[#email: String]]></sys:String>
+									<sys:String><![CDATA[#phone: String]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array>
+									<sys:String><![CDATA[+Person(name: String, email: String, phone: String)]]></sys:String>
+									<sys:String><![CDATA[+getName() String]]></sys:String>
+									<sys:String><![CDATA[+getEmail() String]]></sys:String>
+									<sys:String><![CDATA[+getPhone() String]]></sys:String>
+									<sys:String><![CDATA[+toString() String]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="0.07290465342203893,1"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5844761063051152,1"/>
+				</data>
+			</port>
+		</node>
+		<node id="n1">
+			<data key="d1">
+				<y:RectD X="48.19198787087612" Y="374.5" Width="303.1247544169777" Height="134"/>
+			</data>
+			<data key="d3">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="Doctor" attributesOpen="false" operationsOpen="true">
+							<uml:UMLClassModel.attributes>
+								<x:Array/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array>
+									<sys:String><![CDATA[ +Doctor(name: String, email: String, phone: String)]]></sys:String>
+									<sys:String><![CDATA[+toString() String]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="0.46487559066501216,0"/>
+				</data>
+			</port>
+		</node>
+		<node id="n2">
+			<data key="d1">
+				<y:RectD X="533.8958531682767" Y="369" Width="400.52575398090664" Height="246"/>
+			</data>
+			<data key="d3">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="Patient" attributesOpen="true" operationsOpen="true">
+							<uml:UMLClassModel.attributes>
+								<x:Array>
+									<sys:String><![CDATA[- patientId: int]]></sys:String>
+									<sys:String><![CDATA[- medicalHistory: ArrayList<MedicalRecord>]]></sys:String>
+									<sys:String><![CDATA[- appointments: TreeMap<String, Appointment>]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array>
+									<sys:String><![CDATA[+ Patient(patientId: int, name: String, email: String, phone: String)]]></sys:String>
+									<sys:String><![CDATA[+ getPatientId() int]]></sys:String>
+									<sys:String><![CDATA[+ addMedicalRecord(record: MedicalRecord) void]]></sys:String>
+									<sys:String><![CDATA[+ addAppointment(apt: Appointment) void]]></sys:String>
+									<sys:String><![CDATA[+ getMedicalHistory() ArrayList<MedicalRecord>]]></sys:String>
+									<sys:String><![CDATA[+ getAppointments() TreeMap<String, Appointment>]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="0.3137947752957308,0"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.7977642276422764"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5188557457088726,1"/>
+				</data>
+			</port>
+		</node>
+		<node id="n3">
+			<data key="d1">
+				<y:RectD X="964.421823431938" Y="409" Width="292.45476583453683" Height="166"/>
+			</data>
+			<data key="d3">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="MedicalRecord" attributesOpen="true" operationsOpen="true">
+							<uml:UMLClassModel.attributes>
+								<x:Array>
+									<sys:String><![CDATA[- date: String]]></sys:String>
+									<sys:String><![CDATA[- description: String]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array>
+									<sys:String><![CDATA[+ MedicalRecord(date: String, description: String)]]></sys:String>
+									<sys:String><![CDATA[+ toString() : String]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n4">
+			<data key="d1">
+				<y:RectD X="-243.924173682022" Y="-7" Width="573.9467600624566" Height="294"/>
+			</data>
+			<data key="d3">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 4}" highlightFill="{y:GraphMLReference 3}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="ClinicManagementSystem" attributesOpen="true" operationsOpen="true">
+							<uml:UMLClassModel.attributes>
+								<x:Array>
+									<sys:String><![CDATA[- patients: HashMap<Integer, Patient>]]></sys:String>
+									<sys:String><![CDATA[- doctors: ArrayList<Doctor>]]></sys:String>
+									<sys:String><![CDATA[- appointmentsByDate: TreeMap~String, ArrayList<Appointment~>]]></sys:String>
+									<sys:String><![CDATA[- nextPatientId: int]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array>
+									<sys:String><![CDATA[+ ClinicManagementSystem()]]></sys:String>
+									<sys:String><![CDATA[+ addPatient(name: String, email: String, phone: String) : void]]></sys:String>
+									<sys:String><![CDATA[+ findPatient(patientId: int) : Patient]]></sys:String>
+									<sys:String><![CDATA[+ scheduleAppointment(patientId: int, date: String, time: String, doctorName: String, type: String) : void]]></sys:String>
+									<sys:String><![CDATA[+ saveToFile(filename: String) : void]]></sys:String>
+									<sys:String><![CDATA[+ loadFromFile(filename: String) : void]]></sys:String>
+									<sys:String><![CDATA[+ generatePatientReport(patientId: int) : String]]></sys:String>
+									<sys:String><![CDATA[+ generateDailyAppointments(date: String) : String]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="0.7544801903935394,1"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="0.24838206380141592,1"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.7738095238095238"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.23299319727891157"/>
+				</data>
+			</port>
+		</node>
+		<node id="n5">
+			<data key="d1">
+				<y:RectD X="-600.9771443071777" Y="154" Width="221.08127274133955" Height="134"/>
+			</data>
+			<data key="d3">
+				<uml:UMLNodeStyle fill="{x:Static yjs:Color.SEA_GREEN}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="interface" constraint="" className="FileOperations" attributesOpen="false" operationsOpen="true">
+							<uml:UMLClassModel.attributes>
+								<x:Array/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array>
+									<sys:String><![CDATA[+ saveToFile(filename: String) : void]]></sys:String>
+									<sys:String><![CDATA[+ loadFromFile(filename: String) : void]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.4962686567164179"/>
+				</data>
+			</port>
+		</node>
+		<node id="n6">
+			<data key="d1">
+				<y:RectD X="-600.738367605734" Y="-5.5" Width="275.8140367987696" Height="134"/>
+			</data>
+			<data key="d3">
+				<uml:UMLNodeStyle fill="{x:Static yjs:Color.SEA_GREEN}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="interface" constraint="" className="ReportGenerator" attributesOpen="false" operationsOpen="true">
+							<uml:UMLClassModel.attributes>
+								<x:Array/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array>
+									<sys:String><![CDATA[+ generatePatientReport(patientId: int) : String]]></sys:String>
+									<sys:String><![CDATA[+ generateDailyAppointments(date: String) : String]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n7">
+			<data key="d1">
+				<y:RectD X="549.0002767021135" Y="695.5" Width="493.8954783418047" Height="294"/>
+			</data>
+			<data key="d3">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 4}" highlightFill="{y:GraphMLReference 3}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="Appointment" attributesOpen="true" operationsOpen="true">
+							<uml:UMLClassModel.attributes>
+								<x:Array>
+									<sys:String><![CDATA[- patientId: int]]></sys:String>
+									<sys:String><![CDATA[- date: String]]></sys:String>
+									<sys:String><![CDATA[- time: String]]></sys:String>
+									<sys:String><![CDATA[- doctorName: String]]></sys:String>
+									<sys:String><![CDATA[- type: String]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array>
+									<sys:String><![CDATA[+ Appointment(patientId: int, date: String, time: String, doctorName: String, type: String)]]></sys:String>
+									<sys:String><![CDATA[+ getDate() : String]]></sys:String>
+									<sys:String><![CDATA[+ getTime() : String]]></sys:String>
+									<sys:String><![CDATA[+ getDoctorName() : String]]></sys:String>
+									<sys:String><![CDATA[+ getType() : String]]></sys:String>
+									<sys:String><![CDATA[+ getPatientId() : int]]></sys:String>
+									<sys:String><![CDATA[+ toString() : String]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d8">
+					<y:FreeNodePortLocationModelParameter Ratio="0.3901851174473962,0"/>
+				</data>
+			</port>
+		</node>
+		<edge id="e0" source="n0" target="n1" sourceport="p0" targetport="p0">
+			<data key="d5">
+				<x:List>
+					<y:Bend Location="504.84449198178913,441.5"/>
+				</x:List>
+			</data>
+			<data key="d6">
+				<yjs:PolylineEdgeStyle orthogonalEditing="true" targetArrow="{y:GraphMLReference 5}">
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow stroke="BLACK" fill="WHITE" type="TRIANGLE"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e1" source="n0" target="n2" sourceport="p1" targetport="p0">
+			<data key="d6">
+				<yjs:PolylineEdgeStyle orthogonalEditing="true" targetArrow="{y:GraphMLReference 5}">
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow stroke="BLACK" fill="WHITE" type="TRIANGLE"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e2" source="n2" target="n3" sourceport="p1" targetport="p0">
+			<data key="d6">
+				<yjs:PolylineEdgeStyle orthogonalEditing="true" targetArrow="{y:GraphMLReference 5}">
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow stroke="BLACK" fill="WHITE" type="DIAMOND"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e3" source="n4" target="n1" sourceport="p0" targetport="p1">
+			<data key="d6">
+				<yjs:PolylineEdgeStyle orthogonalEditing="true" targetArrow="{y:GraphMLReference 5}">
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow stroke="BLACK" fill="WHITE" type="DIAMOND"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e4" source="n4" target="n2" sourceport="p1" targetport="p2">
+			<data key="d5">
+				<x:List>
+					<y:Bend Location="-101.36609290557294,565.25"/>
+				</x:List>
+			</data>
+			<data key="d6">
+				<yjs:PolylineEdgeStyle orthogonalEditing="true" targetArrow="{y:GraphMLReference 5}">
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow stroke="BLACK" fill="WHITE" type="DIAMOND"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e5" source="n4" target="n5" sourceport="p2" targetport="p0">
+			<data key="d6">
+				<yjs:PolylineEdgeStyle orthogonalEditing="true" sourceArrow="{y:GraphMLReference 5}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke dashStyle="Dash"/>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="BLACK" fill="BLACK"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e6" source="n4" target="n6" sourceport="p3" targetport="p0">
+			<data key="d6">
+				<yjs:PolylineEdgeStyle orthogonalEditing="true" sourceArrow="{y:GraphMLReference 5}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke dashStyle="Dash"/>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="BLACK" fill="BLACK"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e7" source="n2" target="n7" sourceport="p3" targetport="p0">
+			<data key="d6">
+				<yjs:PolylineEdgeStyle orthogonalEditing="true" targetArrow="{y:GraphMLReference 5}">
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow stroke="BLACK" fill="WHITE" type="DIAMOND"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+	</graph>
+</graphml>
