@@ -88,9 +88,18 @@ public class ClinicManagementSystem implements FileOperations, ReportGenerator {
   @Override
   public void saveToFile(String filename) throws IOException{
     try (PrintWriter writer = new PrintWriter(new FileWriter(filename))) {
-      for (Patient p : patients.values()) {
-          // Format: ID,Name,Email,Phone
-          writer.println(p.getPatientId() + "," + p.getName() + "," + p.getEmail() + "," + p.getPhone());
+      if (filename.toLowerCase().contains("patient")) {
+        // Save Patients: ID,Name,Email,Phone
+        for (Patient p : patients.values()) {
+            writer.println(p.getPatientId() + "," + p.getName() + "," + p.getEmail() + "," + p.getPhone());
+        }
+      }else if(filename.toLowerCase().contains("appointment")){
+        // Save Appointments: PatientID,Date,Time,Doctor,Type
+        for (ArrayList<Appointment> dailyApts : appointmentsByDate.values()) {
+          for (Appointment apt : dailyApts) {
+            writer.println(apt.getPatientId() + "," + apt.getDate() + "," + apt.getTime() + "," + apt.getDoctorName() + "," + apt.getType());
+          }
+        }
       }
     }
   }

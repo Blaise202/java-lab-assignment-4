@@ -64,7 +64,8 @@ public class Main {
         case 5:
           try{
             clinicMS.saveToFile("data/patients.txt");
-            System.out.println("Data saved to patients.txt");
+            clinicMS.saveToFile("data/appointments.txt");
+            System.out.println("Data saved successfully");
           }catch(IOException ex){
             System.out.println("File Error: " + ex.getMessage());
           }
