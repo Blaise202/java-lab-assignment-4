@@ -82,7 +82,7 @@ public class Main {
           break;
         case 7:
           isRunning = false;
-          System.out.println("Exiting system. Goodbye!");
+          System.out.println("System exited. Goodbye!");
           break;
         default:
           System.out.println("Invalid Input! Try again?");
