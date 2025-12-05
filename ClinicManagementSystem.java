@@ -112,12 +112,24 @@ public class ClinicManagementSystem implements FileOperations, ReportGenerator {
         String line = scanner.nextLine();
         // Simple CSV parsing
         String[] parts = line.split(",");
-        if (parts.length >= 4) {
-          int id = Integer.parseInt(parts[0].trim());
-          String name = parts[1].trim();
-          String email = parts[2].trim();
-          String phone = parts[3].trim();
-          addPatient(id, name, email, phone);
+        if (filename.toLowerCase().contains("patient")) {
+          if (parts.length >= 4) {
+            int id = Integer.parseInt(parts[0].trim());
+            String name = parts[1].trim();
+            String email = parts[2].trim();
+            String phone = parts[3].trim();
+            addPatient(id, name, email, phone);
+          } 
+        }else if (filename.toLowerCase().contains("appointment")) {
+          if (parts.length >= 5) {
+            int pId = Integer.parseInt(parts[0].trim());
+            String date = parts[1].trim();
+            String time = parts[2].trim();
+            String doc = parts[3].trim();
+            String type = parts[4].trim();
+            // This will re-add to both Patient tree and System tree
+            scheduleAppointment(pId, date, time, doc, type);
+          }
         }
       }
     }

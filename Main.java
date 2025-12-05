@@ -17,8 +17,8 @@ public class Main {
       System.out.println("2. Schedule Appointment");
       System.out.println("3. Generate Patient Report");
       System.out.println("4. Generate Daily Appointment Report");
-      System.out.println("5. Save Data to File");
-      System.out.println("6. Load Data from File");
+      System.out.println("5. Save Data to Files");
+      System.out.println("6. Load Data from Files");
       System.out.println("7. Exit");
       System.out.print("Enter choice: ");
 
@@ -57,6 +57,7 @@ public class Main {
           int ptId = scanner.nextInt();
           System.out.println(clinicMS.generatePatientReport(ptId));
         case 4:
+          scanner.nextLine();
           System.out.print("Enter Date (YYYY-MM-DD): ");
           String rDate = scanner.nextLine();
           System.out.println(clinicMS.generateDailyAppointments(rDate));
@@ -73,7 +74,8 @@ public class Main {
         case 6:
           try{
             clinicMS.loadFromFile("data/patients.txt");
-            System.out.println("Data loaded from patients.txt");
+            clinicMS.loadFromFile("data/appointments.txt");
+            System.out.println("Data loaded successfully");
           }catch(IOException ex){
             System.out.println("File Error: " + ex.getMessage());
           }
