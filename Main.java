@@ -25,6 +25,7 @@ public class Main {
 
       switch(choice){
         case 1:
+          scanner.nextLine();
           System.out.print("Enter Name: ");
           String name = scanner.nextLine();
           System.out.print("Enter Email: ");

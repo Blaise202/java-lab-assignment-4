@@ -1,4 +1,1 @@
-1,,peter peter@ex.com,+2563647834
-1001,John Doe,john.doe@ashesi.edu.gh,0241234567
-1002,Jane Smith,jane.smith@ashesi.edu.gh,0247654321
-1003,Kofi Mensah,kofi.mensah@ashesi.edu.gh,0205551234
+1,Blaise,blaise@ex.com,+250790056064
