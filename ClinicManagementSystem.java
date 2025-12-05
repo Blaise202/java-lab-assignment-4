@@ -31,6 +31,12 @@ public class ClinicManagementSystem implements FileOperations, ReportGenerator {
     doctors.add(new Doctor("Kwasi", "kwasi@ashesiclinic.com", "0234217364"));
   }
 
+  // show all patients
+  public void showPatients(){
+    if(patients.isEmpty()) System.out.println("\n\n ---No patients saved yet---\n\n");
+    else System.out.println(patients);
+  }
+
   // helper to add patient
   public void addPatient(String name, String email, String phone){
     Patient patient = new Patient(nextPatientId++, name, email, phone);
@@ -55,7 +61,7 @@ public class ClinicManagementSystem implements FileOperations, ReportGenerator {
   public void scheduleAppointment(int patientId, String date, String time, String doctorName, String type) {
     Patient patient = findPatient(patientId);
     if (patient == null) {
-        System.out.println("Error: Patient not found.");
+        System.out.println("========================\n \n Error: Patient not found. \n\n ========================");
         return;
     }
     

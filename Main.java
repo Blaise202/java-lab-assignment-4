@@ -12,6 +12,7 @@ public class Main {
     while(isRunning){
       System.out.println("---Natembea Clinic Management System--- \n");
       System.out.println("Choose the action: \n");
+      System.out.println("0. View All Patients");
       System.out.println("1. Add New Patient");
       System.out.println("2. Schedule Appointment");
       System.out.println("3. Generate Patient Report");
@@ -24,6 +25,9 @@ public class Main {
       int choice = scanner.nextInt();
 
       switch(choice){
+        case 0: 
+          clinicMS.showPatients();
+          break;
         case 1:
           scanner.nextLine();
           System.out.print("Enter Name: ");
